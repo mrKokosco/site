@@ -33,7 +33,7 @@ const PriceFilter = () => {
                 value={[typeof inputValue1 === 'number' ? inputValue1 : 0, typeof inputValue2 === 'number' ? inputValue2 : 0]}
                 onChange={onChangeValue1}
                 step={2000}                                
-                tooltipVisible
+                // tooltipVisible
             />
             <div>от</div>
             <InputNumber

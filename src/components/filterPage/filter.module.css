@@ -9,6 +9,7 @@
 .filter{
     grid-area: 'filter';
     background-color: burlywood;
+    background: url(../../images/bg_toursFilter_filter.png) no-repeat;
 }
 
 .cardsOfTours{
@@ -45,8 +46,10 @@
 .filterWrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 163px 153px 265px;
     grid-auto-rows:400px;
     grid-gap: 30px;
     padding: 20px;
+    border-radius: 0 11px 11px 0px;
+    background-color: #35383cf5;
 }

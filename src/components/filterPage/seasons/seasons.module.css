@@ -1,16 +1,23 @@
-@font-face {
-    font-family: "PFHighwaySansPro";
-    src: url("../../../fonts/PFHighwaySansPro_M.ttf") format("ttf");
-   }
+
 .seasonsWrapper{
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows:30px;
+    color: #EEEEEE;
+    font-family: Zzz;
    
 }
-.seasonsWrapper div{
-   
+
+div{
+    font-family: PFHighwaySansPro M;
+    font-size: 16px;  
 }
+span {    
+    font-family: PFHighwaySansPro R; 
+    color: #EEEEEE;  
+    font-size: 16px;
+}
+
 .ml_8{
     margin-left: 8px;
 }

@@ -1,8 +1,24 @@
-@font-face {
-  font-family: "PFHighwaySansPro";
-  src: url("./fonts/PFHighwaySansPro_M.ttf") format("ttf");
- }
+@font-face{
+  font-family: 'PFHighwaySansPro M';
+  src:url('./fonts/PFHighwaySansPro_M.ttf')  
+  }
 
+@font-face{
+    font-family: 'PFHighwaySansPro R';
+    src:url('./fonts/PFHighwaySansPro_R.ttf')    
+  }
+
+ @font-face{
+      font-family: 'PFHighwaySansPro T';
+      src:url('./fonts/PFHighwaySansPro_T.ttf')    
+  }
+
+  @font-face{
+    font-family: 'Peace Sans';
+    src:url('./fonts/Peace_Sans.otf')    
+}
+
+  
 
 .wrapper{
   display: grid;
@@ -32,7 +48,6 @@ display: grid;
   grid-area: 'content';
 }
 
-.jjj{
-
-  font-family: PFHighwaySansPro;
+h1 {
+  font-family: Zzz;
 }
