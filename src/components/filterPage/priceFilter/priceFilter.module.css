@@ -1,0 +1,25 @@
+.wrapper{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  font-family: PFHighwaySansPro R; 
+  font-size: 16px; 
+  
+}
+
+.inputWrapper{
+  display: grid;
+  grid-template-columns: 25px 110px 25px 1fr;
+  height: 36px;
+}
+
+.pf_m{
+    font-family: PFHighwaySansPro M;
+    font-size: 16px;  
+}
+
+.pf_r{
+  font-family: PFHighwaySansPro R; 
+    font-size: 16px; 
+}
+
