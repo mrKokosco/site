@@ -1,0 +1,91 @@
+
+.card{
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  background:linear-gradient(0turn, #35383C, #ebf8e100, #35383C), url(../../../images/tourPic.png) center center no-repeat;
+  background-size: cover;
+  padding: 11px;
+  border-radius: 11px;
+  box-shadow: 0px 2.96px 12.58px rgba(53, 56, 60, 0.52);  
+}
+.card:hover{
+  transition: ease-in all .1s;
+ cursor: pointer;  
+ background:linear-gradient(0turn, #35383C, #2b2f2880, #35383C), url(../../../images/tourPic.png) center center no-repeat;
+ background-size: cover;
+
+}
+.cardBody{
+  display: grid;
+  height: 100%;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  'header'
+  'other';
+
+}
+
+.header{
+    grid-area: 'header';
+    color: #EDF5F8;
+    font-size: 16px;
+}
+
+.other{
+    grid-area: 'other';
+    display: grid;
+    grid-template-rows: 47px 39px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'price'
+    'otherItem';
+
+}
+
+.price{
+  grid-area: "price";
+  font-family: Peace Sans;
+  font-size: 30px;
+  color: #EDF5F8;
+}
+.price span{
+  font-size: 15px;
+}
+.otherItems{
+  grid-area: "otherItem";
+  display: grid;
+  grid-template-columns: 45px 45px 45px 1fr;
+  font-size: 15px;
+  color: #EDF5F8;
+}
+
+.otherItems .textPreview{
+  font-size: 8px;
+}
+
+.color{
+  color: #CAE0EA;
+}
+
+.cardIcon{
+  display: grid;
+  grid-template-rows: 22px 22px;
+  grid-template-columns: repeat(auto-fill,1fr);
+}
+
+.clickButton{
+  align-self: center;
+  justify-self: center;
+  transition: ease-in all .1s;
+  
+}
+.clickButton:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  
+  
+}
+
+.clickButton .color{
+  color: #fff;
+}

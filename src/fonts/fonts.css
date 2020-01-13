@@ -1,0 +1,10 @@
+/* @font-face {
+    font-family: "Peace Sans";
+    src: url("./Peace Sans.otf") format("otf"),
+        url("./Peace Sans Webfont.ttf") format("ttf");
+   } */
+   @font-face {
+    font-family: "PFHighwaySansPro";
+    src: url("./PFHighwaySansPro_M.ttf") format("ttf");
+   }
+  
