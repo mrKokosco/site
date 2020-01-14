@@ -8,19 +8,15 @@ import { GridVerical } from './style';
 
 
 const Saesons = (props) => {
-    let classes = s + '.'+props
+  
     let onChange = () => {
-
-
     }
 
-debugger
+
     return (
 
-
-        <div className={classes}>
-            <GridVerical>ffffff</GridVerical>
-            <div >Время года</div>
+        <div className={s.seasonsWrapper}>     
+           
             <Checkbox className={s.ml_8} onChange={onChange}>Зима</Checkbox>
             <Checkbox onChange={onChange}>Весна</Checkbox>
             <Checkbox onChange={onChange}>Лето</Checkbox>

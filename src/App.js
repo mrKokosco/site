@@ -5,6 +5,7 @@ import Calender2 from './components/widget/calendar2';
 import FilterPage from './components/filterPage/filterPage';
 import Header from './components/header/header';
 import './App.css';
+import HomePage from './components/homePage/homePage';
 
 
 
@@ -16,7 +17,9 @@ function App() {
       <h1 className='jjj'>КККККпривет</h1>
       <Header className='header'/>
       <div className='content'>
-        <FilterPage />       
+        <HomePage/>
+        
+        {/* <FilterPage />        */}
 
       </div>
     </div>

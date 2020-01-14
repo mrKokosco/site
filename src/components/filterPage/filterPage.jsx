@@ -15,7 +15,7 @@ const FilterPage = () => {
 
             <div className={s.filter}>
                 <div className={s.filterWrapper}>
-                    <Saesons />
+                    <Saesons props={'seasonsWrapper'} />
                     <PriceFilter />
                     <CalendarFilter />
 
