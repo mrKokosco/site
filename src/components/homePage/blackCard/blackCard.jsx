@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import Saesons from '../seasons/seasons'
-import s from './blackCard.module.css'
-import FilterSteps from '../seasons/style'
+import Seasons from '../../filterPage/seasons/seasons'
+import {SeasonWrapper} from '../../filterPage/seasons/style'
+import {Card, Container} from './blackCardStyle'
 import { InputNumber } from 'antd'
+import Step1 from './step1/step1'
+import Step2 from './step2/step2'
 import "antd/dist/antd.css";
 
 
@@ -13,25 +15,9 @@ const BlackCard = () => {
         setInputValue(value)
     }
     return (
-        <div className={s.blackCard}>
-            <h3>Давайте выберем вам тур всего за 3 этапа.</h3>
-            <div className={s.filterType}>
-                <h4>Когда вы хотите отдохнуть?</h4>
-                <Saesons />
-                <h4>Сколько вас человек?</h4>
-                <InputNumber
-                    min={1}
-                    max={100}
-                    style={{ marginLeft: 4 }}
-                    value={inputValue}
-                    onChange={(value) => { setInputValue(value) }}
-                    step={1}
-                />
-            </div>
-
-
-
-        </div>
+        <Card>
+            <Step2/>
+        </Card>
     )
 }
 

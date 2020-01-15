@@ -13,14 +13,10 @@ const Saesons = (props) => {
 
 
     }
-
-debugger
     return (
 
 
-        <div className={classes}>
-            <GridVerical>ffffff</GridVerical>
-            <div >Время года</div>
+        <div >           
             <Checkbox className={s.ml_8} onChange={onChange}>Зима</Checkbox>
             <Checkbox onChange={onChange}>Весна</Checkbox>
             <Checkbox onChange={onChange}>Лето</Checkbox>

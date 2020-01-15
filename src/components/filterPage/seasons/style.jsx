@@ -9,6 +9,9 @@ export const GridVerical = styled.div`
     font-size: 16px;   
 `
 
+export const SeasonWrapper = styled(GridVerical)`
+grid-template-columns: repeat(auto-fill,minmax(188px,200px));
+`
 
 // @media screen and (max-width: 900px) and (min-width: 600px){
 //     color: #tttttt
