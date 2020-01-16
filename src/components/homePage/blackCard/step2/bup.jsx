@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Seasons from '../../../filterPage/seasons/seasons'
+<<<<<<< HEAD
 import { SeasonWrapper } from '../../../filterPage/seasons/style'
 import { CardWrpper, ImagesWrapper,ImagesWrapperCard, Card, Container, WithWho ,Ecp} from './step2Style'
 import { InputNumber } from 'antd'
@@ -9,11 +10,18 @@ import forFamily from '../../../../images/forFamily.png'
 import familyPreview from '../../../../images/familyPreview.png'
 import forManPreview from '../../../../images/forMan.jpg'
 import s from './s.module.css'
+=======
+import {SeasonWrapper} from '../../../filterPage/seasons/style'
+import {Card, Container} from './step2Style'
+import { InputNumber } from 'antd'
+import "antd/dist/antd.css";
+>>>>>>> e9ff72d6b104a9a1675f8b8596a3e914abb86518
 
 
 
 
 const Step2 = () => {
+<<<<<<< HEAD
     let [preview, setPreview] =useState(familyPreview)
     let [inputValue, setInputValue] = useState(1)
 let onChangePreview =(pic)=>{
@@ -78,6 +86,23 @@ let onChangePreview =(pic)=>{
 
 
 
+=======
+    let [inputValue, setInputValue] = useState(1)
+    let onChangeInput1 = (value) => {
+        setInputValue(value)
+    }
+    return (
+        <>
+        <h4>Заголовок</h4>
+            <Container>
+                <img src='https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg'/>
+            </Container>
+        </>
+            
+              
+           
+        
+>>>>>>> e9ff72d6b104a9a1675f8b8596a3e914abb86518
     )
 }
 

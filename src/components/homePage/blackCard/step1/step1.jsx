@@ -13,15 +13,15 @@ const Step1 = () => {
         setInputValue(value)
     }
     return (
-        <>
-        <h4>Заголовок</h4>
+        <Card>
+        <h4>Давайте выберем вам тур всего за 3 этапа.</h4>
             <Container>
-                <h3>текст 1</h3>  
+                <h3>Когда вы хотите отдохнуть?</h3>  
                 <SeasonWrapper>
                     <Seasons/> 
                 </SeasonWrapper>
                          
-                <h3>текст2</h3>
+                <h3>Сколько вас человек?</h3>
                 <InputNumber
                     min={1}
                     max={100}
@@ -31,7 +31,7 @@ const Step1 = () => {
                     step={1}
                 />
             </Container>
-        </>
+            </Card>
             
               
            

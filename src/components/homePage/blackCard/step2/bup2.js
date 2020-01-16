@@ -1,5 +1,6 @@
 import React from 'react'; 
 import styled from 'styled-components';
+<<<<<<< HEAD
 import familyPreview from '../../../../images/familyPreview.png'
 import { ExceptionMap } from 'antd/lib/result';
 const famaly =familyPreview
@@ -55,11 +56,32 @@ border-radius: 15.3947px;
 export const Container = styled.div`display: grid;
 grid-template-columns: 2fr 1fr;
 grid-template-rows: 1fr;
+=======
+
+export const Card = styled.div`
+    background: #35383C;
+    box-shadow: 0px 8px 18px rgba(39,60,72,0.18);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    padding: 56px;
+    max-width: 649px;
+    max-width: 649px;
+    h4{
+        text-align: center;
+    }
+    
+`
+export const Container = styled.div`
+display: grid;
+grid-template-columns: 2fr 1fr;
+>>>>>>> e9ff72d6b104a9a1675f8b8596a3e914abb86518
 grid-auto-rows: 66px;
 img{
     vertical-align: middle;
 border-style: none;
 width: 28%;
+<<<<<<< HEAD
 }
 `
 
@@ -81,6 +103,9 @@ img{
     width: 61%;
     border-radius: 50%;
     padding-bottom: 9px;
+=======
+border-radius: 50%;
+>>>>>>> e9ff72d6b104a9a1675f8b8596a3e914abb86518
 }
 `
 
