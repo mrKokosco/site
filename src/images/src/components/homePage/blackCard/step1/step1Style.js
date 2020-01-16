@@ -12,19 +12,12 @@ export const Card = styled.div`
     max-width: 649px;
     h4{
         text-align: center;
-    }
-    
+}
 `
 export const Container = styled.div`
 display: grid;
 grid-template-columns: 2fr 1fr;
 grid-auto-rows: 66px;
-img{
-    vertical-align: middle;
-border-style: none;
-width: 28%;
-border-radius: 50%;
-}
 `
 
 // .blackCard{

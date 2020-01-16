@@ -1,0 +1,53 @@
+@font-face{
+  font-family: 'PFHighwaySansPro M';
+  src:url('./fonts/PFHighwaySansPro_M.ttf')  
+  }
+
+@font-face{
+    font-family: 'PFHighwaySansPro R';
+    src:url('./fonts/PFHighwaySansPro_R.ttf')    
+  }
+
+ @font-face{
+      font-family: 'PFHighwaySansPro T';
+      src:url('./fonts/PFHighwaySansPro_T.ttf')    
+  }
+
+  @font-face{
+    font-family: 'Peace Sans';
+    src:url('./fonts/Peace_Sans.otf')    
+}
+
+  
+
+.wrapper{
+  display: grid;
+  
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  'header'
+  'content';
+}
+
+.header{
+  width:100%;
+  background-color:#F00;
+  
+
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.header div{
+  line-height: 40px;
+  text-align: center;
+  white-space: nowrap;
+ 
+}
+.content{
+  grid-area: 'content';
+}
+
+h1 {
+  font-family: Zzz;
+}

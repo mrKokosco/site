@@ -15,9 +15,12 @@ const BlackCard = () => {
         setInputValue(value)
     }
     return (
-        <Card>
-            <Step2/>
-        </Card>
+        <>
+        <Step2/>
+        </>
+
+            
+        
     )
 }
 
