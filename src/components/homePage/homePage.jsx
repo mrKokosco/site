@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
-import Saesons from './seasons/seasons'
-import s from './homePage.module.css'
-import FilterSteps from './seasons/style'
-import { InputNumber } from 'antd'
 import "antd/dist/antd.css";
 import BlackCard from './blackCard/blackCard'
+import {Container} from './homePageStyle'
 
 
 
@@ -16,7 +13,10 @@ const HomePage = () => {
     }
     return (
         <div >
-            <BlackCard/>
+            <Container>
+                <BlackCard/>
+            </Container>
+            
             
           
             </div>

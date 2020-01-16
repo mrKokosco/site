@@ -13,8 +13,7 @@ import HomePage from './components/homePage/homePage';
 
 function App() {
   return (
-    <div className="wrapper">
-      <h1 className='jjj'>КККККпривет</h1>
+    <div className="wrapper">      
       <Header className='header'/>
       <div className='content'>
         <HomePage/>
