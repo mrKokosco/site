@@ -18,6 +18,25 @@
     src:url('./fonts/Peace_Sans.otf')    
 }
 
+h3{
+  font-family: 'PFHighwaySansPro M';
+  text-align: left;
+  padding-left: 22px;
+  color:#AAADB2;
+}
+h4{
+  font-family: 'PFHighwaySansPro M';
+  text-align: left;
+  font-size: 20px;
+  color:#AAADB2;
+}
+
+h5{
+  font-family: 'PFHighwaySansPro R';
+  text-align: left;
+  font-size: 17px;
+  color:#AAADB2;
+}
   
 
 .wrapper{
@@ -44,7 +63,7 @@ display: grid;
   white-space: nowrap;
  
 }
-.content{
+.Content{
   grid-area: 'content';
 }
 

@@ -16,7 +16,8 @@ const BlackCard = () => {
     }
     return (
         <>
-        <Step2/>
+         <Step1/>
+        
         </>
 
             

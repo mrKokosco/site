@@ -25,10 +25,9 @@ const PriceFilter = () => {
 
 
     return (
-        <div className={s.wrapper}>
-            <div className={s.pf_m}>Цена</div>
-            <div className={s.inputWrapper}>
-                <div>от</div> <InputNumber
+       <>
+           <div className={s.inputWrapper}>
+                <h5>от</h5> <InputNumber
                     min={0}
                     max={100000}
                     style={{ marginLeft: 4 }}
@@ -36,7 +35,7 @@ const PriceFilter = () => {
                     onChange={onChangeInput1}
                     step={2000}
                 />
-                <div>до</div> <InputNumber
+                <h5>до</h5> <InputNumber
                     min={0}
                     max={100000}
                     style={{ marginLeft: 4 }}
@@ -59,7 +58,9 @@ const PriceFilter = () => {
 
             />
 
-        </div>
+       </>
+            
+      
 
     )
 

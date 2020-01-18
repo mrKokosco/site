@@ -6,20 +6,31 @@ import Saesons from './seasons/seasons';
 import PriceFilter from './priceFilter/priceFilter';
 import CalendarFilter from './calendar/calendarFilter';
 import CardOfTour from './cardofTours/cardOfTour';
+import { FilterPageWrapper, FilterWrapper, SeasonsWrapper, PriceWrapper, CalendarWrapper, FindButton } from './filterStyle'
 
 
 
 const FilterPage = () => {
     return (
-        <div className={s.filterPage}>
+        <FilterPageWrapper className='FilterPageWrapper'>
 
             <div className={s.filter}>
-                <div className={s.filterWrapper}>
-                    <Saesons props={'seasonsWrapper'} />
-                    <PriceFilter />
-                    <CalendarFilter />
-
-                </div>
+                <FilterWrapper className='FilterWrapper'>
+                    <SeasonsWrapper className='SeasonsWrapper'>
+                        <h4>Время года</h4>
+                        <Saesons props={'seasonsWrapper'} />
+                    </SeasonsWrapper>
+                    <PriceWrapper className='PriceWrapper'>
+                        <h4>Цена</h4>
+                        <PriceFilter />
+                    </PriceWrapper>
+                    <CalendarWrapper className='CalendarWrapper'>
+                        <h4>Даты заселения</h4>  
+                        <CalendarFilter />
+                    </CalendarWrapper>
+                  
+                    <FindButton className='FindButton'>Найти</FindButton>
+                </FilterWrapper>
 
 
 
@@ -37,10 +48,12 @@ const FilterPage = () => {
                     </div>
                 </div>
 
-
+                
             </div>
 
-        </div>
+           
+
+        </FilterPageWrapper>
 
     )
 

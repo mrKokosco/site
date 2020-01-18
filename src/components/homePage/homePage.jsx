@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "antd/dist/antd.css";
 import BlackCard from './blackCard/blackCard'
-import {Container} from './homePageStyle'
+import {Container, MapWrapper} from './homePageStyle'
 
 
 
@@ -13,9 +13,15 @@ const HomePage = () => {
     }
     return (
         <div >
-            <Container>
-                <BlackCard/>
+            <Container className='Container'>
+                <BlackCard className='BlackCard'/>
             </Container>
+
+        <MapWrapper>
+            <div>Виды</div>
+            <div>Карта</div>
+        </MapWrapper>
+            
             
             
           

@@ -6,6 +6,7 @@ import FilterPage from './components/filterPage/filterPage';
 import Header from './components/header/header';
 import './App.css';
 import HomePage from './components/homePage/homePage';
+import {Content} from './contentStyle'
 
 
 
@@ -15,12 +16,12 @@ function App() {
   return (
     <div className="wrapper">      
       <Header className='header'/>
-      <div className='content'>
+      <Content className='Content'>
         <HomePage/>
         
         {/* <FilterPage />        */}
 
-      </div>
+      </Content>
     </div>
   );
 }

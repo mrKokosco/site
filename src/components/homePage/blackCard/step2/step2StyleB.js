@@ -6,11 +6,10 @@ const famaly =familyPreview
 
 export const CardWrpper = styled.div`
     display: grid;    
-
-    @media (min-width:576px) {  
+    @media (min-width:600px) {  
         grid-template-columns: 1fr;
       }
-    @media (min-width:960px) {  
+    @media (min-width:812px) {  
         grid-template-columns: minmax(300px,794px) 214px;
       }
       
@@ -23,36 +22,22 @@ border-radius: 8px;
 display: grid;
 
 
-
-
-@media (max-width:576px) {  
-    grid-template-rows: 147px 1fr;
-    padding-bottom: 74px;
-    height: 100%;
-    h4{text-align: center;
-    font-size:30px;
-    }
-  }
-@media (min-width:576px) {  
+h4{
+    padding-left: 32px;
+}
+@media (min-width:600px) {  
     grid-template-columns: 97vw;
     grid-template-rows: 55px 220px;
-    max-width: 959px;
+    max-width: 812px;
     height: 385px;
     padding: 20px 0px 0px 0px;
-    h4{
-        text-align: center;
-    }
   }
-  
-@media (min-width:960px) {  
+@media (min-width:812px) {  
     grid-template-columns: 1fr;
-    grid-template-rows: 55px 220px;
+grid-template-rows: 55px 220px;
     max-width: 794px;
     height: 385px;
     padding: 20px 204px 0px 7px;
-    h4{
-        padding-left: 32px;
-    }
   }
    
     
@@ -70,8 +55,7 @@ export const ImagesWrapper = styled.div`
 
 export const PreviewPic= styled.div`
 display:none;
-
-@media (min-width:960px) {  
+@media (min-width:812px) {  
     background-color: white;
 background-color: white;
 background: linear-gradient(359.52deg,#202020 4.68%,rgba(53,56,60,0) 75%),url(${props => props.pic }) center center no-repeat;
@@ -80,11 +64,7 @@ height: 66%;
 width: 181%;
 box-shadow: 0px 8px 18px rgba(33, 33, 33, 0.39);
 border-radius: 15.3947px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
-    padding: 0 10px 11px 10px;
-
+display:block;
   }
 
 `
@@ -102,30 +82,20 @@ width: 28%;
 
 export const WithWho = styled.div`
 display: grid;
-
-@media (max-width:576px) {  
-  
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  }
-
-@media (min-width:576px) {  
+@media (min-width:600px) {  
    
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
     grid-template-rows: 120px 1fr;
     grid-gap: 20px;
-    grid-template-columns: repeat(3,minmax(146px,209px));
-    justify-content: center;
   }
 
-@media (min-width: 768px) {  
+@media (min-width: 723px) {  
    
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    grid-template-rows: 120px 1fr;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, minmax(150px, 220px));
-    grid-auto-rows: 1fr;
-    justify-content: center;
   }
-@media (min-width: 960px) {  
+@media (min-width: 803px) {  
     
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px 1fr;

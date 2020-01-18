@@ -14,8 +14,8 @@ const CalenderFilter = () => {
     const [startDate, setStartDate] = useState(new Date());
     
     return (
-        <div>
-            <div>Даты заселения</div>            
+        <>
+                      
             <DatePicker
                 minDate={new Date()}
                 selected={startDate}
@@ -24,7 +24,7 @@ const CalenderFilter = () => {
                 locale="ru"
             />
 
-        </div>
+        </>
 
     );
 };

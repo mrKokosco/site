@@ -1,6 +1,7 @@
 .blackCard{
     background: #35383C;
     box-shadow: 0px 8px 18px rgba(39, 60, 72, 0.18);
+    background: url(../../images/bg_toursFilter_cards.png) center center;
     border-radius: 8px;
     width: 674px;
     height: 385px;

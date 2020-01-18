@@ -1,13 +1,19 @@
 import React, { useState } from 'react'
 import Seasons from '../../../filterPage/seasons/seasons'
 import { SeasonWrapper } from '../../../filterPage/seasons/style'
-import { CardWrpper, ImagesWrapper,ImagesWrapperCard, Card, Container, WithWho ,Ecp} from './step2Style'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { CardWrpper, ImagesWrapper,ImagesWrapperCard, Card, Container, WithWho ,PreviewPic} from './step2Style'
 import { InputNumber } from 'antd'
 import "antd/dist/antd.css";
 import forMe from '../../../../images/forMe.png'
+import forLovers from '../../../../images/forLovers.png'
 import forFamily from '../../../../images/forFamily.png'
+import forMan from '../../../../images/forMan.png'
+import forCompany from '../../../../images/forCompany.png'
+import forParty from '../../../../images/forParty.png'
 import familyPreview from '../../../../images/familyPreview.png'
-import forManPreview from '../../../../images/forMan.jpg'
+import forManPreview from '../../../../images/forManPreview.jpg'
 import s from './s.module.css'
 
 
@@ -38,23 +44,27 @@ let onChangePreview =(pic)=>{
                 </div>
                 <WithWho>
                     <div>
-                         <img src={forMe} />
+                         <img className='icon' src={forMe} />
                          <h5>Я еду один</h5>
                 </div>
                 <div>
-                         <img src={forFamily} />
+                         <img className='icon' src={forLovers} />
                          <h5>Пара</h5>
                 </div>
+                <div>
+                         <img className='icon' src={forFamily} />
+                         <h5>Семейный</h5>
+                </div>
                 <div onClick={()=>{onChangePreview(forManPreview)}}>
-                         <img src='https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg' />
+                         <img className='icon' src={forMan} />
                          <h5>Чисто мужской</h5>
                 </div>
                 <div>
-                         <img src='https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg' />
-                         <h5>Семейный</h5>
+                         <img className='icon' src={forParty} />
+                         <h5>Компания</h5>
                 </div>
                 <div onClick={()=>{onChangePreview(familyPreview)}}>
-                         <img src='https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg' />
+                         <img src={forCompany} />
                          <h5>Корпоративный</h5>
                 </div>
                         
@@ -62,10 +72,14 @@ let onChangePreview =(pic)=>{
 
             </Card>
             <ImagesWrapper>
-            <Ecp pic={preview}>
+            <PreviewPic pic={preview}>
             <h5>Отдохни с друзьями</h5>
+            <div>
+            <FontAwesomeIcon className={s.color} icon={faArrowCircleRight} size="2x" pull="right"/>
+            </div>
+           
 
-            </Ecp>
+            </PreviewPic>
                 
                     
                 {/* <img src={preview} alt="" /> */}
