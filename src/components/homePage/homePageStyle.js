@@ -17,10 +17,16 @@ display: grid;
   }
 `
 
-export const MapWrapper = styled.div`
-display:grid;
-grid-template-columns: 1fr 1fr;
+export const MapOfTypeWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 691px;
     grid-auto-rows: 1fr;
     height: 100%;
+    background: #35383cd9;
+    padding: 80px 40px 40px 40px;
+`
+export const PlaceWrapper = styled.div`
+
+
 `
 
